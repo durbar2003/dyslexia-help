@@ -7,8 +7,6 @@ from cv2 import GaussianBlur, normalize, NORM_MINMAX, threshold, THRESH_BINARY
 from spellchecker import SpellChecker
 from autocorrect import Speller
 
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-
 def readerMain(filename):
 
     spell = SpellChecker()
@@ -37,4 +35,4 @@ def readerMain(filename):
     for i in range(7):
         scheckedtext.insert(0, "  ")
 
-    return 
+    return scheckedtext
